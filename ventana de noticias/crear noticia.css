@@ -1,0 +1,28 @@
+body {
+
+    background-color: burlywood;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.cat{position: relative;
+left: 600px;
+top:-225px;
+}
+.cate{position: relative;
+    left: 600px;
+    top:-225px;
+    
+   
+}
+.detalle{
+    width: 50%;
+    height: 200px;
+    max-width: 100%;
+    min-width: 200%;
+}
+.subir{position: relative;
+    left: 0px;
+    top:25px;
+    
+}
