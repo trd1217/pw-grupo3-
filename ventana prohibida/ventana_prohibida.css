@@ -1,21 +1,27 @@
-body {
-
-    background-color: rgb(189, 82, 82);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+body 
+{
+  background-color: rgba(73, 54, 240, 0.418);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .text
 {
-    position: top;
-    text-align: right;
-    font-family: fantasy;
-    font-size: 50px;
+  position: relative;
+  text-align: center;
+  left: 35%;
+  font-family: fantasy;
+  font-size: 80px;
   color: rgb(126, 25, 0); 
 }
-.text2{
-   text-align: left;
-    font-family: fantasy;
-    font-size: 50px;
-  color: rgb(126, 25, 0); 
+
+video
+{
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
 }
