@@ -1,0 +1,52 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://www.xtrafondos.com/wallpapers/geometria-3d-3586.jpg);
+    background-blend-mode: darken;
+}
+
+.hero-image {
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.pinimg.com/originals/62/93/08/629308463e4f44c84cce5603f6843f50.jpg");
+height: 50%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+  
+.white {
+color: Black;
+background-color: rgba(190, 190, 190, 1.0);
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+  
+.column img {
+opacity: 0.8;
+cursor: pointer;
+}
+  
+.column img:hover {
+opacity: 1;
+}
+
+.hero-text button {
+border: none;
+outline: 0;
+display: inline-block;
+padding: 10px 25px;
+color: black;
+background-color: #ddd;
+text-align: center;
+cursor: pointer;
+}
+  
+.hero-text button:hover {
+background-color: #555;
+color: white;
+}

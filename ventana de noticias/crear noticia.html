@@ -20,44 +20,49 @@
               <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Tendencias</a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link"  href="#">No tocar este boton</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" class="color letter" href="#">Crear noticia</a>
-              </li>
+            </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            <input class="form-control mr-sm-2" type="search" placeholder="Usuario" aria-label="Search">
+            }<input class="form-control mr-sm-2" type="search" placeholder="Contraseña" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Iniciar Sesión</button>
           </form>
         </div>
-      </nav>
+    </nav>
      <div class="container">
-        <div class="row justify-content ">
-
-            <form action="">
-                <div class="form-group text">
-                    <h1 class="text-light">Nueva noticia</h1>
-                </div>
-                <div class="form-group" >
-                       <h6 >Nombre del articulo</h6>
-                       <input type="text" class="form-control" >
-                       <h6>Detalles de la noticia</h6>
-                       <input type="text" class="form-control detalle ">
-                       <h6 class="text cate">Categorias</h6>
-                       <input type="text" class="form-control cat" >
-                        <h6>Inserte imagenes o videos del articulo</h6>
-                </div>
-                    <button > "ingrese imagenes"</button>
-                    <button > "Subir noticia "</button>  
-        
-                </form>
-               
-            </form>
-       </div>
+        <form action="">
+            <div class="form-group text">
+              <h1 class="text-light">Nueva noticia</h1>
+            </div>
+            <div class="form-group" >
+              <h6 class="text-light">Nombre del articulo</h6>
+              <input type="text" class = "form-control">
+              <h6 class="text-light">Detalles de la noticia</h6>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="20"></textarea>
+              <h6 class="text-light">Categoria</h6>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Politica</option>
+                <option>Horror</option>
+                <option>Cinematografía</option>
+                <option>Animales</option>
+                <option>Internet</option>
+              </select>
+            </div>
+        </form>
+        <div class="container2" >
+          <h6 class="text-light">Inserte imagenes o videos del articulo (Max 6 imagenes 1 Video)</h6>
+          <button type="button" class="btn btn-dark">Insertar Multimedia</button>
+          <div class ="row">
+            <div class="column"> 
+              <img src ="https://i.pinimg.com/originals/ba/39/5a/ba395a4e2324999393495369b853263f.jpg" class="img-thumbnail">
+            </div>
+        </div>
+        </div>
+        <div class="center">
+          <h6 class="text-light">Publicar Noticia</h6>
+          <button type="button" class="btn btn-dark">Publicar</button>
+        </div>
      </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

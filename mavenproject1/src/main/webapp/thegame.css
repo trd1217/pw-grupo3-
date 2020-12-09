@@ -1,0 +1,36 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7/12/2020, 04:56:13 PM
+    Author     : user
+*/
+
+body {
+
+    background-color: rgb(189, 82, 82);
+    background-image: url(https://www.xtrafondos.com/wallpapers/geometria-3d-3586.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.text
+{
+  position: static;
+  display: inline;
+  left: 35%;
+  font-family: fantasy;
+  font-size: 40px;
+  color: rgb(126, 25, 0); 
+}
+.text2
+{
+  position: static;
+  left: 35%;
+  font-family: fantasy;
+  font-size: 80px;
+  color: rgb(126, 25, 0); 
+}
+

@@ -1,28 +1,47 @@
 body {
 
-    background-color: rgba(73, 54, 240, 0.418);
+    background-color: rgba(10, 6, 49, 0.986);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-image: url(https://www.xtrafondos.com/wallpapers/geometria-3d-3586.jpg);
+    background-blend-mode: darken;
 }
-.cat{position: relative;
-left: 600px;
-top:-225px;
-}
-.cate{position: relative;
-    left: 600px;
-    top:-225px;
-    
-   
-}
+
 .detalle{
     width: 50%;
     height: 200px;
     max-width: 100%;
     min-width: 200%;
+    position: center;
 }
+
 .subir{position: relative;
     left: 0px;
     top:25px;
-    
+}
+
+.container2{
+
+    margin:10px;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+  
+.column img {
+opacity: 0.8;
+cursor: pointer;
+}
+  
+.column img:hover {
+opacity: 1;
+}
+
+.center{
+    margin:auto;
+    text-align:center;
+
 }
