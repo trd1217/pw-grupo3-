@@ -23,20 +23,18 @@
                     <div class="form-group text-center">
                         <h1 class="text-light">Iniciar sesion</h1>
                     </div>
-                    <form class="col-12" >
-                        <div class="form-group" >
-                            <input type="text" class="form-control" placeholder="Usuario">
-                        </div>
-                        <div class="form-group" >
-                            <input type="password" class="form-control" placeholder="Contraseña">
-                        </div>
-                        <div class="form-group" >
-                            <input type="submit" class="btn btn-block ingresar " value="I N G R E S A R">
-                        </div>
-                        <p><a href="#" class="text-light" style="text-align: center; position: static;">¿Olvideste tu contraseña?</a></p>
-                        <p><a href="#" class="text-light" style="text-align: center; position: static;">Crear cuenta</a></p>
-                    </form>
-    
+                </form>
+                <form class="col-12" >
+                    <div class="form-group" >
+                        <input type="text" class="form-control" placeholder="Usuario" >
+                    </div>
+                    <div class="form-group" >
+                        <input type="password" class="form-control" placeholder="Contraseña">
+                    </div>
+                    <div class="form-group" >
+                        <input type="submit" class="btn btn-block ingresar " value="I N G R E S A R">
+                    </div>
+                    
                 </form>
             </div>
         </div>

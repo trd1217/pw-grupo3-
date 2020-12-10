@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
-        <servlet-name>toMainAsAnonymous</servlet-name>
-        <servlet-class>Servlets.toMain</servlet-class>
+        <servlet-name>UserControl</servlet-name>
+        <servlet-class>Servlets.UserControl</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>toCreateNew</servlet-name>
         <servlet-class>Servlets.toCreateNew</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>toCreateAccount</servlet-name>
-        <servlet-class>Servlets.toCreateAccount</servlet-class>
+        <servlet-name>CreateNewControler</servlet-name>
+        <servlet-class>Servlets.CreateNewControler</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>toInitSesion</servlet-name>
         <servlet-class>Servlets.toInitSesion</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>toMainAsAnonymous</servlet-name>
-        <url-pattern>/toMainAsAnonymous</url-pattern>
+        <servlet-name>UserControl</servlet-name>
+        <url-pattern>/UserControl</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>toCreateNew</servlet-name>
         <url-pattern>/toCreateNew</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>toCreateAccount</servlet-name>
-        <url-pattern>/toCreateAccount</url-pattern>
+        <servlet-name>CreateNewControler</servlet-name>
+        <url-pattern>/CreateNewControler</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>toInitSesion</servlet-name>

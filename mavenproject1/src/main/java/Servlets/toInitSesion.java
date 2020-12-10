@@ -17,8 +17,8 @@ import javax.servlet.http.HttpServletResponse;
  * @author user
  */
 public class toInitSesion extends HttpServlet {
-
-    /**
+    
+    /*
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
      *
@@ -27,6 +27,7 @@ public class toInitSesion extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
+    
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");

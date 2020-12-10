@@ -5,18 +5,25 @@
  */
 package Servlets;
 
+import DAOs.UserDAO;
+import Utility.FileUtility;
+import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.Part;
+import models.ModelUser;
 
 /**
  *
  * @author user
  */
-public class toMain extends HttpServlet {
+@MultipartConfig(maxFileSize = 1000 * 1000 * 5, maxRequestSize = 1000 * 1000 * 25, fileSizeThreshold = 1000 * 1000)
+public class UserControl extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -60,10 +67,45 @@ public class toMain extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        String contraseña = request.getParameter("contra");
         String usuario = request.getParameter("user");
-        String contraseña = request.getParameter("contraseña");
+        String email = request.getParameter("email");
+        String Access = request.getParameter("access");
+        String desc = request.getParameter("descripcion");
+        String imageName;
+            
+            
+            int access=0;
+            if("Usuario Anonimo (Solo se guardara el nombre hasta que salgas de la pagina)".equals(Access))
+                access=0;
+            if("Usuario Normal".equals(Access))
+                access=2;
+            if("Usuario Moderador".equals(Access))
+                access=3;
+            if("Usuario Creador de Contenido".equals(Access))
+                access=4;
+            if("Usuario Editor".equals(Access))
+                access=5;
+            
+            String path = request.getServletContext().getRealPath("");
+            
+            File fileDir = new File (path + FileUtility.RUTE_USER_IMAGE);
+            if(!fileDir.exists()){
+                fileDir.mkdir();
+            }
+            Part file = request.getPart("Image");
+            String fileType = file.getContentType();
+
+            imageName = file.getName() + System.currentTimeMillis() + FileUtility.GetExtension(fileType);
+            String truePath =  path + FileUtility.RUTE_USER_IMAGE + "/" + imageName;
+            file.write(truePath);
+            
+
+
+            ModelUser user = new ModelUser(usuario, contraseña,FileUtility.RUTE_USER_IMAGE + "/" + imageName, desc, email,access);
+            UserDAO.insertUser(user);
+            response.sendRedirect("index.jsp");
         
-        processRequest(request, response);
     }
 
     /**

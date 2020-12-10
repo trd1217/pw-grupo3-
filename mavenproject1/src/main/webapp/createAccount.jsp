@@ -4,7 +4,9 @@
     Author     : user
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="java.util.List"%>
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -23,43 +25,43 @@
                     <div class="form-group text-center">
                         <h1 class="text-light">Crear cuenta</h1>
                     </div>
-                    <form class="col-12" >
-                        <div class="form-group" >
-                            <h6 class="text-light">Correo electronico</h6>
-                            <input type="text" class="form-control" >
-                        </div>
-                        <div class="form-group" >
-                            <h6 class="text-light">Nombre de usuario</h6>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="form-group" >
-                            <h6 class="text-light">Contraseña</h6>
-                            <input type="password" class="form-control">
-                        </div>
-                        <div class="form-group" >
-                            <h6 class="text-light">Confirma la contraseña</h6>
-                            <input type="password" class="form-control">
-                        </div>
-                        <div class="form-group" >
-                            <h6 class="text-light">Categoria</h6>
-                            <select class="form-control" id="Combo">
-                              <option>Usuario Anonimo (Solo se guardara el nombre hasta que salgas de la pagina)</option>
-                              <option>Usuario Normal</option>
-                              <option>Usuario Moderador</option>
-                              <option>Usuario Creador de Contenido</option>
-                              <option>Usuario Editor</option>
-                            </select>
-                        </div>
-                        <div class="form-group" >
-                            <h6 class="text-light">Danos una pequeña descripción tuya</h6>
-                            <textarea class="form-control" id="Combo" rows="20"></textarea>
-                        </div>
-                        <div class="form-group" >
-                            <input type="submit" class="btn btn-block ingresar " value="Crear cuenta">
-                            <input type="submit" class="btn btn-block ingresar " value="Ya tengo una cuenta">
-                            <a class="btn btn-block ingresar" href="toMainAsAnonymous"> Entrar como anonimo</a>
-                        </div>
-                    </form>
+                </form>
+                <form class="col-12" action="./UserControl" method="POST" enctype="multipart/form-data">
+                    <div class="form-group" >
+                        <h6 class="text-light">Correo electronico</h6>
+                        <input type="email" class="form-control" name="email">
+                    </div>
+                    <div class="form-group" >
+                        <h6 class="text-light">Nombre de usuario</h6>
+                        <input type="text" class="form-control" name="user">
+                    </div>
+                    <div class="form-group" >
+                        <h6 class="text-light">Contrase�a</h6>
+                        <input type="password" class="form-control" name="contra">
+                    </div>
+                    <div class="form-group" >
+                        <h6 class="text-light">Categoria</h6>
+                        <select class="form-control" id="Combo" name="access">
+                          <option>Usuario Anonimo (Solo se guardara el nombre hasta que salgas de la pagina)</option>
+                          <option>Usuario Normal</option>
+                          <option>Usuario Moderador</option>
+                          <option>Usuario Creador de Contenido</option>
+                          <option>Usuario Editor</option>
+                        </select>
+                    </div>
+                    <div class="form-group" >
+                        <h6 class="text-light">Danos una peque�a descripci�n tuya</h6>
+                        <textarea class="form-control" id="Combo" rows="20" name="descripcion"></textarea>
+                    </div>
+                    <div class="form-group" >
+                        <h6 class="text-light">Pon una imagen de Perfil</h6>
+                        <input type="file" name="Image">
+                    </div>
+                    <div class="form-group" >
+                        <input type="submit" class="btn btn-block ingresar " value="Crear cuenta">
+                        <input type="submit" class="btn btn-block ingresar " value="Ya tengo una cuenta">
+                        <a class="btn btn-block ingresar" href="toMainAsAnonymous"> Entrar como anonimo</a>
+                    </div>
                 </form>
             </div>
         </div>

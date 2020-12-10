@@ -4,7 +4,12 @@
     Author     : user
 --%>
 
+<%@page import="java.util.List"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="models.ModelCategory"%>
+<%
+    List<ModelCategory> categories = (List<ModelCategory>)request.getAttribute("Categories");
+%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -52,11 +57,13 @@
               <textarea class="form-control" id="Combo" rows="20"></textarea>
               <h6 class="text-light">Categoria</h6>
               <select class="form-control" id="Combo">
-                <option>Politica</option>
-                <option>Horror</option>
-                <option>Cinematografía</option>
-                <option>Animales</option>
-                <option>Internet</option>
+                <%
+                    for( ModelCategory category: categories){
+                %>
+                    <option><%=category.getNombre()%></option>
+                <%
+                    }
+                %>
               </select>
             </div>
         </form>

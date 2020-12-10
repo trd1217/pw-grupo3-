@@ -79,4 +79,4 @@ DROP TABLE Categoria
 DROP TABLE Comentario
 
 INSERT INTO Usuario (Email, Usuario, Contraseña, NivelDeAcceso) VALUES('ejemplo@gmail.com', 'SOY ADMIN', 'OSI', 1)
-SELECT * FROM USUARIO
+select * from Usuario;

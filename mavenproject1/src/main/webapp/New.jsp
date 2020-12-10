@@ -19,28 +19,7 @@
         <link rel ="stylesheet" href="New.css">
     </head>
      <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="thegame.jsp">Emageht</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item ">
-          <a class="nav-link" href="New.jsp">Inicio <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" class="color letter" href="createNew.jsp">Crear noticia</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-          <a class="btn btn-outline-warning my-2 my-sm-0" href="initSesion.jsp">Iniciar Sesión</a>
-          <a class="btn  my-2 my-sm-0 disabled"tabindex="-1" href="" role="button" aria-disabled="true" ></a>
-        <a class="btn btn-outline-warning my-2 my-sm-0" href="createAccount.jsp">Crear Cuenta</a>
-      </form>
-    </div>
-  </nav>
+ <jsp:include page="Navar.jsp"></jsp:include>
         <div class="hero-image">
         
         
